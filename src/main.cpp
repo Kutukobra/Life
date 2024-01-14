@@ -8,7 +8,7 @@ int main()
     InitWindow(1080, 720, "Life");
 
     SetTargetFPS(60);
-    srand(time(NULL));
+    SetRandomSeed(time(0));
     Setup();
     while (!WindowShouldClose())
     {
